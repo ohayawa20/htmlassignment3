@@ -1,13 +1,20 @@
 <head>
 <title> Index</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-   <h1><center>WELCOME TO MY WEBPAGE</h1></center> 
+   <h1 id="logo">WELCOME TO MY WEBPAGE</h1>
    <p>
-    <a href="/others/blog.html"><b>BLOG</b></a><p>
-    <a href="/others/contact.html"><b>CONTACT US</b></a><p>
-        <a href="/others/about.html"><b>ABOUT</b></a>
-<form>
+    <ul class="links">
+        <li> <a href="/others/blog.html"><b>BLOG</b></a><p></li>
+            <li> <a href="/others/contact.html"><b>CONTACT US</b></a><p></li>
+                <li> <a href="/others/about.html"><b>ABOUT</b></a></li>
+    </ul>
+    <main>
+<form method="post">
+    <fieldset>
+        <legend> <b>Registration Form</b></legend>
+        <br>
 <label for="">First name</label> <input type="text" id="fname" name="fname"><p>
 <label for="">Second name</label> <input type="text" id="sname" name="sname"><p>
 <label for="">Email</label> <input type="text" id="email" name="email"><p>
@@ -45,7 +52,8 @@
         <textarea id="tellus" name="tellus" rows="4" cols="50"> </textarea>
 <p>
         <input type="submit" value="Submit">
-
+    </fieldset>
     </form>
+</main>
 </body>
 </html>
